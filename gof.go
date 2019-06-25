@@ -25,6 +25,10 @@ func (g *Gof) Get(path string, handler RequestHandler) {
 
 }
 
+func (g *Gof) Post(path string, handler RequestHandler) {
+
+}
+
 func (g *Gof) Start() {
 
 }
