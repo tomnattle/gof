@@ -1,14 +1,16 @@
 package gof
 
+import "context"
+
 type Gof struct {
 }
 
-type IRequest interface {
+type Request interface {
 }
-type IResponse interface {
+type Response interface {
 }
 
-type RequestHandler func(IRequest, IResponse)
+type RequestHandler func(context.Context, Request, Response)
 
 func (g *Gof) Router(path string, handler RequestHandler) {
 
