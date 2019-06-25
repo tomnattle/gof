@@ -5,6 +5,10 @@ import "context"
 type Gof struct {
 }
 
+func NewGof() *Gof {
+	return new(Gof)
+}
+
 type Request interface {
 }
 type Response interface {
