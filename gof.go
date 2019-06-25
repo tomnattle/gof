@@ -5,7 +5,7 @@ import "context"
 type Gof struct {
 }
 
-func NewGof() *Gof {
+func New() *Gof {
 	return new(Gof)
 }
 
