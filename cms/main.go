@@ -7,7 +7,7 @@ import (
 
 func main() {
 	app := gof.New()
-	app.Get("/article", article.List)
-	app.Post("/article", article.List)
+	app.Rest("/article", article.List)
+	app.Post("/article", article.Create)
 	app.Start()
 }
