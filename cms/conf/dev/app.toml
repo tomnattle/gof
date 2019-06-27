@@ -1,0 +1,2 @@
+[logger]
+path = "/opt/log/cms.log"
